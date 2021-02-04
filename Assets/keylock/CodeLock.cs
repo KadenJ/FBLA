@@ -5,6 +5,8 @@ using UnityEngine;
 public class CodeLock : MonoBehaviour
 {
 
+    public GameObject door;
+
     int codeLength;
     int placeInCode;
 
@@ -22,7 +24,7 @@ public class CodeLock : MonoBehaviour
     {
         if(attemptedCode == code)
         {
-            StartCoroutine(Open());
+            Open();
         }
         else
         {
@@ -30,14 +32,9 @@ public class CodeLock : MonoBehaviour
         }
     }
 
-    IEnumerator Open()
+    void Open()
     {
-        //changes door rotation
-        toOpen.Rotate(new Vector3(0, 90, 0), Space.World);
-
-        yield return new WaitForSeconds(4);
-
-        //toOpen.Rotate(new Vector3(0, -90, 0), Space.World);
+        door.GetComponent<Animator>().Play("Door");
     }
 
     // Update is called once per frame
