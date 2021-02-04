@@ -6,7 +6,7 @@ public class ScreenshotHandler : MonoBehaviour
 {
     private static ScreenshotHandler instance;
 
-    public Camera myCamera;
+    private Camera myCamera;
     private bool takeScreenshotOnNextFrame;
 
     private void Awake()
