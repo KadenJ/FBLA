@@ -37,7 +37,7 @@ public class CodeLock : MonoBehaviour
 
         yield return new WaitForSeconds(4);
 
-        toOpen.Rotate(new Vector3(0, -90, 0), Space.World);
+        //toOpen.Rotate(new Vector3(0, -90, 0), Space.World);
     }
 
     // Update is called once per frame

@@ -2501,6 +2501,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8466081406733750280, guid: 0352045994802cd4abb4200091a69b63,
         type: 3}
+      propertyPath: reset
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 8466081406733750280, guid: 0352045994802cd4abb4200091a69b63,
+        type: 3}
       propertyPath: toOpen
       value: 
       objectReference: {fileID: 475396670}
