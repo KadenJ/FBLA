@@ -33,7 +33,7 @@ public class CodeLock : MonoBehaviour
     IEnumerator Open()
     {
         //changes door rotation
-        toOpen.Rotation(new Vector3(0, 90, 0), Space.World);
+        toOpen.Rotate(new Vector3(0, 90, 0), Space.World);
 
         yield return new WaitForSeconds(4);
 

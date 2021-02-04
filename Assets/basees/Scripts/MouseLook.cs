@@ -15,7 +15,7 @@ public class MouseLook : MonoBehaviour
     void Start()
     {
         // makes the mouse disapear when the game starts so you don't click off the screen
-        Cursor.lockState = CursorLockMode.Locked;
+        //Cursor.lockState = CursorLockMode.Locked;
     }
 
     // Update is called once per frame
