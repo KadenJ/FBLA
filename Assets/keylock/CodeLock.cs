@@ -25,6 +25,7 @@ public class CodeLock : MonoBehaviour
         if(attemptedCode == code)
         {
             Open();
+            
         }
         else
         {
@@ -34,6 +35,7 @@ public class CodeLock : MonoBehaviour
 
     void Open()
     {
+        GetComponent<AudioSource>().Play();
         door.GetComponent<Animator>().Play("Door");
     }
 
@@ -41,6 +43,7 @@ public class CodeLock : MonoBehaviour
     public void SetValue(string value)
     {
         placeInCode++;
+
 
         if(placeInCode <= codeLength)
         {

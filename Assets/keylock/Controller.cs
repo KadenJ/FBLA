@@ -29,6 +29,7 @@ public class Controller : MonoBehaviour
         if (Physics.Raycast(ray, out hit, reachRange))
         {
             codeLock = hit.transform.gameObject.GetComponentInParent<CodeLock>();
+            GetComponent<AudioSource>().Play();
 
             if (codeLock != null)
             {

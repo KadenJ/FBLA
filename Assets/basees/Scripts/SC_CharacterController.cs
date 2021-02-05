@@ -4,6 +4,8 @@
 
 public class SC_CharacterController : MonoBehaviour
 {
+    
+
     public float speed = 7.5f;
     public float jumpSpeed = 8.0f;
     public float gravity = 20.0f;
@@ -26,6 +28,8 @@ public class SC_CharacterController : MonoBehaviour
 
         // makes the mouse disapear when the game starts so you don't click off the screen
         Cursor.lockState = CursorLockMode.Locked;
+
+        
     }
 
     void Update()
@@ -61,6 +65,10 @@ public class SC_CharacterController : MonoBehaviour
             rotation.x = Mathf.Clamp(rotation.x, -lookXLimit, lookXLimit);
             playerCamera.transform.localRotation = Quaternion.Euler(rotation.x, 0, 0);
             transform.eulerAngles = new Vector2(0, rotation.y);
+
+            
         }
+
+        
     }
 }
