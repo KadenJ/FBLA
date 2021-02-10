@@ -69,6 +69,10 @@ public class SC_CharacterController : MonoBehaviour
             
         }
 
+        while(Time.timeScale == 0f)
+        {
+            lookSpeed = 0;
+        }
         
     }
 }
