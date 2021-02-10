@@ -128,6 +128,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2006554411}
     m_Modifications:
+    - target: {fileID: 2257524883279639497, guid: 722db21eebaac67459a81ff0d9834568,
+        type: 3}
+      propertyPath: m_Range
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 2717943658452242266, guid: 722db21eebaac67459a81ff0d9834568,
         type: 3}
       propertyPath: m_RootOrder
@@ -976,6 +981,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2006554411}
     m_Modifications:
+    - target: {fileID: 2257524883279639497, guid: 722db21eebaac67459a81ff0d9834568,
+        type: 3}
+      propertyPath: m_Range
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 2717943658452242266, guid: 722db21eebaac67459a81ff0d9834568,
         type: 3}
       propertyPath: m_RootOrder
@@ -1051,6 +1061,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2006554411}
     m_Modifications:
+    - target: {fileID: 2257524883279639497, guid: 722db21eebaac67459a81ff0d9834568,
+        type: 3}
+      propertyPath: m_Range
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 2717943658452242266, guid: 722db21eebaac67459a81ff0d9834568,
         type: 3}
       propertyPath: m_RootOrder
@@ -1374,6 +1389,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2257524883279639497, guid: 722db21eebaac67459a81ff0d9834568,
+        type: 3}
+      propertyPath: m_Type
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2257524883279639497, guid: 722db21eebaac67459a81ff0d9834568,
+        type: 3}
+      propertyPath: m_Range
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 2717943658452242266, guid: 722db21eebaac67459a81ff0d9834568,
         type: 3}
       propertyPath: m_RootOrder
@@ -1536,6 +1561,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2006554411}
     m_Modifications:
+    - target: {fileID: 2257524883279639497, guid: 722db21eebaac67459a81ff0d9834568,
+        type: 3}
+      propertyPath: m_Range
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 2717943658452242266, guid: 722db21eebaac67459a81ff0d9834568,
         type: 3}
       propertyPath: m_RootOrder
@@ -1878,6 +1908,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2006554411}
     m_Modifications:
+    - target: {fileID: 2257524883279639497, guid: 722db21eebaac67459a81ff0d9834568,
+        type: 3}
+      propertyPath: m_Range
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 2717943658452242266, guid: 722db21eebaac67459a81ff0d9834568,
         type: 3}
       propertyPath: m_RootOrder
