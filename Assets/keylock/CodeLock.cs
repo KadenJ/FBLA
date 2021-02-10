@@ -6,6 +6,7 @@ public class CodeLock : MonoBehaviour
 {
 
     public GameObject door;
+    public GameObject player;
 
     int codeLength;
     int placeInCode;
@@ -30,6 +31,8 @@ public class CodeLock : MonoBehaviour
         else
         {
             Debug.Log("Worng code");
+            Close();
+
         }
     }
 
@@ -57,5 +60,10 @@ public class CodeLock : MonoBehaviour
             attemptedCode = "";
             placeInCode = 0;
         }
+    }
+
+    public void Close()
+    {
+        player.GetComponent<AudioSource>().Play();
     }
 }
