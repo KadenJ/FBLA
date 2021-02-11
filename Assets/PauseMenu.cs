@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class PauseMenu : MonoBehaviour
     public static bool GameIsPaused = false;
 
     public GameObject pauseMenuUI;
+
+    SC_CharacterController characterController;
 
     // Update is called once per frame
 
@@ -24,8 +27,12 @@ public class PauseMenu : MonoBehaviour
             else
             {
                 Pause();
+                               
+                              
             }
         }
+
+        
     }
 
     void Resume()
@@ -40,13 +47,24 @@ public class PauseMenu : MonoBehaviour
     void Pause()
     {
         pauseMenuUI.SetActive(true);
-        Time.timeScale = 0f;
+        Time.timeScale = 0.0001f;
         GameIsPaused = true;
 
         Cursor.lockState = CursorLockMode.None;
-        
+                               
+    }
 
-        
-        
+    [SerializeField] private string loadLevel;
+    public void LoadMenu()
+    {
+        Debug.Log("Loading menu");
+        SceneManager.LoadScene(loadLevel);
+
+    }
+
+    public void QuitGame()
+    {
+        Debug.Log("quitting");
+            Application.Quit();
     }
 }

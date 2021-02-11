@@ -1,10 +1,12 @@
-﻿using UnityEngine;
+﻿
+using UnityEngine;
 
 [RequireComponent(typeof(CharacterController))]
 
 public class SC_CharacterController : MonoBehaviour
 {
-    
+    PauseMenu pause;
+
 
     public float speed = 7.5f;
     public float jumpSpeed = 8.0f;
@@ -29,7 +31,7 @@ public class SC_CharacterController : MonoBehaviour
         // makes the mouse disapear when the game starts so you don't click off the screen
         Cursor.lockState = CursorLockMode.Locked;
 
-        
+
     }
 
     void Update()
@@ -66,13 +68,23 @@ public class SC_CharacterController : MonoBehaviour
             playerCamera.transform.localRotation = Quaternion.Euler(rotation.x, 0, 0);
             transform.eulerAngles = new Vector2(0, rotation.y);
 
-            
+
         }
 
-        while(Time.timeScale == 0f)
+        if (Input.GetKeyDown(KeyCode.P))
         {
-            lookSpeed = 0;
+            lookSpeed = 0f;
+            Debug.Log("pause");
         }
-        
+        if (lookSpeed = 0f)
+        {
+            if (Input.GetKeyDown(KeyCode.P))
+            {
+                lookSpeed = 2f;
+                Debug.Log("resume");
+            }
+        }
+
+
     }
 }
