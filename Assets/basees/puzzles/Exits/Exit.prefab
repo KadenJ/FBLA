@@ -107,4 +107,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b29112ae03bb9f4a9793e9189d445e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  score: {fileID: 5139951590440584912, guid: 06cecf8d30f875746a48c7b2038d9fb2, type: 3}
   loadLevel: Level02

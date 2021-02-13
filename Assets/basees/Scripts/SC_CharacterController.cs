@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class SC_CharacterController : MonoBehaviour
 {
-    PauseMenu pause;
+
 
 
     public float speed = 7.5f;
@@ -71,19 +71,17 @@ public class SC_CharacterController : MonoBehaviour
 
         }
 
-        if (Input.GetKeyDown(KeyCode.P))
+        if (Time.timeScale == .0001f)
         {
             lookSpeed = 0f;
             Debug.Log("pause");
         }
-        if (lookSpeed = 0f)
+        else
         {
-            if (Input.GetKeyDown(KeyCode.P))
-            {
-                lookSpeed = 2f;
-                Debug.Log("resume");
-            }
+            lookSpeed = 2f;
+            Debug.Log("resume");
         }
+        
 
 
     }
