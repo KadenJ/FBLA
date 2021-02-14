@@ -1,5 +1,4 @@
-﻿
-using UnityEngine;
+﻿using UnityEngine;
 
 [RequireComponent(typeof(CharacterController))]
 
@@ -23,7 +22,7 @@ public class SC_CharacterController : MonoBehaviour
     [HideInInspector]
     public bool canMove = true;
 
-    void Start()
+     void Start()
     {
         characterController = GetComponent<CharacterController>();
         rotation.y = transform.eulerAngles.y;
@@ -34,7 +33,7 @@ public class SC_CharacterController : MonoBehaviour
 
     }
 
-    void Update()
+     void Update()
     {
         if (characterController.isGrounded)
         {
@@ -74,12 +73,12 @@ public class SC_CharacterController : MonoBehaviour
         if (Time.timeScale == .0001f)
         {
             lookSpeed = 0f;
-            Debug.Log("pause");
+            //Debug.Log("pause");
         }
         else
         {
             lookSpeed = 2f;
-            Debug.Log("resume");
+            //Debug.Log("resume");
         }
         
 

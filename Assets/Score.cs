@@ -61,6 +61,30 @@ public class Score : MonoBehaviour
     void losehealth()
     {
         
+        if (timer == 180f)
+        {
+            health = health - 1;
+        }
+        if(timer  == 360f)
+        {
+            health = health - 1;
+        }
+        if(timer == 540f)
+        {
+            health = health - 1;
+        }
+        if(timer == 720f)
+        {
+            health = health - 1;
+        }
+        if (timer == 900f)
+        {
+            health = health - 1;
+        }
+        if (health == 0)
+        {
+            SceneManager.LoadScene(GaOv);
+        }
     }
 
         

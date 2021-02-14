@@ -13,8 +13,14 @@ public class PauseMenu : MonoBehaviour
 
     SC_CharacterController characterController;
 
+
+
     // Update is called once per frame
 
+    private void Start()
+    {
+        Time.timeScale = 1f;
+    }
 
     void Update()
     {
@@ -55,10 +61,13 @@ public class PauseMenu : MonoBehaviour
     }
 
     [SerializeField] private string loadLevel;
-    public void LoadMenu()
+        public void LoadMenu()
     {
         Debug.Log("Loading menu");
         SceneManager.LoadScene(loadLevel);
+        int currentScene = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.UnloadSceneAsync(currentScene);
+        
 
     }
 

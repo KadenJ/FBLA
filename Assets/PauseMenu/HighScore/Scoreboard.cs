@@ -44,7 +44,13 @@ namespace FBLA.Scoreboard
                 for(int i=0;i<savedScores.highscores.Count; i++)
                 {
                     if (scoreboardEntryData.entryScore < savedScores.highscores[i].entryScore)
-                    {                        
+                    {             
+                        //if you press button score will not be placed
+                        if(scoreboardEntryData.entryScore == 9999)
+                    {
+                        scoreAdded = false;
+                        break;
+                    }
                         savedScores.highscores.Insert(i, scoreboardEntryData);
                         scoreAdded = true;
                         break;
