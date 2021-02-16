@@ -12,8 +12,14 @@ EditorBuildSettings:
     path: Assets/Scenes/level 1.unity
     guid: b8a890cd886a30740ac940579d6f99e8
   - enabled: 1
+    path: Assets/Scenes/Loadingscenes/Persistent Scene.unity
+    guid: 17e9f9e6114b1134e9d2f028dab12187
+  - enabled: 1
     path: Assets/Scenes/Level02.unity
     guid: be1683dadd689dc4b83674f8d8d08c7f
+  - enabled: 1
+    path: Assets/Scenes/Loadingscenes/PS 2 to 3.unity
+    guid: 124d444821efddd4abb66370947e8eea
   - enabled: 1
     path: Assets/Scenes/Level03.unity
     guid: b7ed00b9b44bce14a893606bfa0f32a3

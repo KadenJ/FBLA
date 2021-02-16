@@ -61,23 +61,23 @@ public class Score : MonoBehaviour
     void losehealth()
     {
         
-        if (timer == 180f)
+        if (score == 180)
         {
             health = health - 1;
         }
-        if(timer  == 360f)
+        if(score  == 360)
         {
             health = health - 1;
         }
-        if(timer == 540f)
+        if(score == 540)
         {
             health = health - 1;
         }
-        if(timer == 720f)
+        if(score == 720)
         {
             health = health - 1;
         }
-        if (timer == 900f)
+        if (score == 900)
         {
             health = health - 1;
         }
