@@ -25,6 +25,9 @@ namespace FBLA.Scoreboard
             UpdateUI(savedScores);
 
             AddEntry(testEntrydata);
+
+            
+            
         }
 
         /*[ContextMenu("Add Test Entry")]
@@ -39,11 +42,12 @@ namespace FBLA.Scoreboard
             scoreboardEntryData.entryName = PlayerPrefs.GetString("name");
             ScoreboardSaveData savedScores = GetSavedScores();
 
+            
             bool scoreAdded = false;
 
                 for(int i=0;i<savedScores.highscores.Count; i++)
                 {
-                    if (scoreboardEntryData.entryScore < savedScores.highscores[i].entryScore)
+                    if (scoreboardEntryData.entryScore > savedScores.highscores[i].entryScore)
                     {             
                         //if you press button score will not be placed
                         if(scoreboardEntryData.entryScore == 9999)
@@ -62,7 +66,7 @@ namespace FBLA.Scoreboard
                     savedScores.highscores.Add(scoreboardEntryData);
                 }
 
-                if(savedScores.highscores.Count> maxScoreboardEntries)
+                if(savedScores.highscores.Count > maxScoreboardEntries)
                 {
                     savedScores.highscores.RemoveRange(
                         maxScoreboardEntries, 

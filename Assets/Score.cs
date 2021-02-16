@@ -14,6 +14,7 @@ public class Score : MonoBehaviour
     private float timer;
     public int score;
     public int health = 5;
+    public int scoreText;
 
     void Start()
     {
@@ -36,7 +37,7 @@ public class Score : MonoBehaviour
     {
         timer += Time.deltaTime;
                 
-        timerText.text = score + "s";
+        timerText.text = scoreText + "s";
 
         if (Time.timeScale != 1f)
         {
@@ -49,7 +50,8 @@ public class Score : MonoBehaviour
 
         losehealth();
 
-        score = (int)timer;
+        scoreText = (int)timer;
+        score = 9999 - (int)timer;
 
         PlayerPrefs.SetFloat("time", timer);
         PlayerPrefs.SetInt("Score", score);

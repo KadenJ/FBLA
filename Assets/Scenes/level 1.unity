@@ -2191,11 +2191,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: LoadMenu
       objectReference: {fileID: 0}
-    - target: {fileID: 5139951590440584912, guid: 06cecf8d30f875746a48c7b2038d9fb2,
-        type: 3}
-      propertyPath: health
-      value: 5
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 06cecf8d30f875746a48c7b2038d9fb2, type: 3}
 --- !u!1001 &1568961453
