@@ -7,10 +7,10 @@ public class PlayerName : MonoBehaviour
 {
     public static bool inputNameUI = true;
     public GameObject namePrompt;
-
+    
     public string theName;
     public GameObject inputField;
-    
+           
     public void StoreName()
     {
         theName = inputField.GetComponent<Text>().text;
@@ -20,7 +20,7 @@ public class PlayerName : MonoBehaviour
         Debug.Log("saved name");
         namePrompt.SetActive(false);
         inputNameUI = false;
-
         
+                
     }
 }
