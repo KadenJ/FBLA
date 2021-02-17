@@ -550,7 +550,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 0
+  Priority: 110
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -754,6 +754,19 @@ Transform:
   m_Father: {fileID: 4828221770743878004}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1170051692043959159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4829352350137409650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa1722d1c12830849a5e258a46ea4fb4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flashlight: {fileID: 4791871303697009414}
 --- !u!136 &4828221771147481479
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -838,12 +851,32 @@ PrefabInstance:
     - target: {fileID: 108490535558035930, guid: ae07f5a7e50d802419d96b04791e8cc0,
         type: 3}
       propertyPath: m_Range
-      value: 100
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 108490535558035930, guid: ae07f5a7e50d802419d96b04791e8cc0,
+        type: 3}
+      propertyPath: m_Cookie
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 108490535558035930, guid: ae07f5a7e50d802419d96b04791e8cc0,
         type: 3}
       propertyPath: m_Intensity
       value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 108490535558035930, guid: ae07f5a7e50d802419d96b04791e8cc0,
+        type: 3}
+      propertyPath: m_SpotAngle
+      value: 70
+      objectReference: {fileID: 0}
+    - target: {fileID: 108490535558035930, guid: ae07f5a7e50d802419d96b04791e8cc0,
+        type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 108490535558035930, guid: ae07f5a7e50d802419d96b04791e8cc0,
+        type: 3}
+      propertyPath: m_InnerSpotAngle
+      value: 8.5
       objectReference: {fileID: 0}
     - target: {fileID: 108490535558035930, guid: ae07f5a7e50d802419d96b04791e8cc0,
         type: 3}
@@ -866,6 +899,18 @@ GameObject:
 --- !u!4 &4832303967977827286 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4082237453981962, guid: ae07f5a7e50d802419d96b04791e8cc0,
+    type: 3}
+  m_PrefabInstance: {fileID: 4828221771638518492}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4829352350137409650 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1130842716983982, guid: ae07f5a7e50d802419d96b04791e8cc0,
+    type: 3}
+  m_PrefabInstance: {fileID: 4828221771638518492}
+  m_PrefabAsset: {fileID: 0}
+--- !u!108 &4791871303697009414 stripped
+Light:
+  m_CorrespondingSourceObject: {fileID: 108490535558035930, guid: ae07f5a7e50d802419d96b04791e8cc0,
     type: 3}
   m_PrefabInstance: {fileID: 4828221771638518492}
   m_PrefabAsset: {fileID: 0}

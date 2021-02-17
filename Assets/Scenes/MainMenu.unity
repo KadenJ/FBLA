@@ -455,6 +455,7 @@ MonoBehaviour:
   m_CaretBlinkRate: 0.85
   m_CaretWidth: 1
   m_ReadOnly: 0
+  m_ShouldActivateOnSelect: 1
 --- !u!114 &425333015
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1695,6 +1696,33 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1919914531}
+    - target: {fileID: 6009587344266038770, guid: c9e965633b29d2948aaf3db0a9f07680,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 731.3705
+      objectReference: {fileID: 0}
+    - target: {fileID: 6009587344266038770, guid: c9e965633b29d2948aaf3db0a9f07680,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 119.54413
+      objectReference: {fileID: 0}
+    - target: {fileID: 6009587344266038770, guid: c9e965633b29d2948aaf3db0a9f07680,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6009587344266038770, guid: c9e965633b29d2948aaf3db0a9f07680,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -44.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6009587344266038771, guid: c9e965633b29d2948aaf3db0a9f07680,
+        type: 3}
+      propertyPath: m_Text
+      value: "Controls: W,A,S,D to move\t\tP to pause\n Mouse 1 to press buttons\t\tESC
+        to quit\nSpace to toggle flashlight\nEvery 3 minutes you will lose 1 life
+        (5 lives total)\n"
+      objectReference: {fileID: 0}
     - target: {fileID: 6009587344330819785, guid: c9e965633b29d2948aaf3db0a9f07680,
         type: 3}
       propertyPath: m_Name
