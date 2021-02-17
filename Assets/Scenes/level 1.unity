@@ -3417,21 +3417,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 9187795475355875412, guid: 42ff3cd9aa4d10649a19d91883f36bad,
-        type: 3}
-      propertyPath: Priority
-      value: 110
-      objectReference: {fileID: 0}
-    - target: {fileID: 9187795475355875412, guid: 42ff3cd9aa4d10649a19d91883f36bad,
-        type: 3}
-      propertyPath: m_PlayOnAwake
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9187795475355875412, guid: 42ff3cd9aa4d10649a19d91883f36bad,
-        type: 3}
-      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 42ff3cd9aa4d10649a19d91883f36bad, type: 3}
 --- !u!1 &4828221772371824055 stripped
