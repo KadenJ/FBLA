@@ -921,7 +921,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Made In Unity\n\n\nPragramed, \ndesigned, \nand planned\n by Kaden Jackson\n"
+  m_Text: "Made In Unity\n\n\nProgramed, \ndesigned, \nand planned\n by Kaden Jackson\n"
 --- !u!222 &2067612850
 CanvasRenderer:
   m_ObjectHideFlags: 0
