@@ -29,7 +29,7 @@ public class SC_CharacterController : MonoBehaviour
 
         // makes the mouse disapear when the game starts so you don't click off the screen
         Cursor.lockState = CursorLockMode.Locked;
-
+        Cursor.visible = false;
 
     }
 

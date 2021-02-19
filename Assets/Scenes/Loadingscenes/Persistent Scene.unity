@@ -309,5 +309,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Loading Screen
       objectReference: {fileID: 0}
+    - target: {fileID: 8473291599420586351, guid: 136cf1ca4a0b0a74ba70dea35a33a0ef,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -119
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 136cf1ca4a0b0a74ba70dea35a33a0ef, type: 3}

@@ -1,10 +1,16 @@
-﻿using System.IO;
+﻿
+using System.Collections;
+using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
+
 
 namespace FBLA.Scoreboard
 {
     public class Scoreboard : MonoBehaviour
     {
+        public GameObject newHighScore;
+        
         [SerializeField] private int maxScoreboardEntries = 3;
         [SerializeField] private Transform highscoresHolderTransform = null;
         [SerializeField] private GameObject scoreboardEntryObject = null;
@@ -17,6 +23,7 @@ namespace FBLA.Scoreboard
         private void Start()
         {
             Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
 
             ScoreboardSaveData savedScores = GetSavedScores();
 
@@ -51,15 +58,34 @@ namespace FBLA.Scoreboard
                     {             
                         //if you press button score will not be placed
                         if(scoreboardEntryData.entryScore == 9999)
-                    {
+                        {
                         scoreAdded = false;
                         break;
-                    }
+                        }
                         savedScores.highscores.Insert(i, scoreboardEntryData);
                         scoreAdded = true;
                         break;
-                    }
-                }  
+                    }                                    
+                                       
+
+                }
+
+            if (scoreboardEntryData.entryScore > savedScores.highscores[1].entryScore)
+            {
+                //newHighScore.SetActive(true);
+
+                StartCoroutine(setHighscore());
+
+                Debug.Log("highscore");
+            }
+
+            IEnumerator setHighscore()
+                {
+                    newHighScore.SetActive(true);
+
+                    yield return new WaitForSeconds(3);
+                    newHighScore.SetActive(false);
+                }
                 
                 if(!scoreAdded && savedScores.highscores.Count<maxScoreboardEntries)
                 {

@@ -10,7 +10,11 @@ public class PlayerName : MonoBehaviour
     
     public string theName;
     public GameObject inputField;
-           
+
+    private void Start()
+    {
+        Cursor.visible = true;
+    }
     public void StoreName()
     {
         theName = inputField.GetComponent<Text>().text;
